@@ -11,15 +11,16 @@ namespace Pocket
         public bool SaveCurrencyState(string currency, float value)
         {
             PlayerPrefs.SetFloat(PrefsPrefix + currency, value);
+            PlayerPrefs.Save();
 
             return true;
         }
 
         public bool LoadCurrencyState(string currency, out float value, float defaultValue = default)
         {
-            value = PlayerPrefs.GetFloat(currency, defaultValue);
+            value = PlayerPrefs.GetFloat(PrefsPrefix + currency, defaultValue);
 
-            return PlayerPrefs.HasKey(currency);
+            return PlayerPrefs.HasKey(PrefsPrefix + currency);
         }
     }
 }

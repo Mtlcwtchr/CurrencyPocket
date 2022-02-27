@@ -14,5 +14,6 @@ namespace Pocket.Abstraction
         int GetSupportedCurrencyTypes(out List<string> currencyTypes);
 
         void Initialize(ICurrencyPocketConfiguration<T> configuration, ICurrencyPocketStateHandler<T> stateHandler);
+        void Deinitialize();
     }
 }
