@@ -1,0 +1,15 @@
+{
+  "name": "com.example.currencypocket",
+  "version": "1.0.0",
+  "displayName": "CurrencyPocket",
+  "description": "Currency Pocket module",
+  "unity": "2020.3.7",
+  "author": {
+    "name": "Anton Slauta"
+  },
+  "type": "module",
+  "dependencies": {
+    
+  },
+  "hideInEditor" : "false"
+}
